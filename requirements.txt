@@ -1,0 +1,9 @@
+opencv-python==4.5.1.48
+pynput==1.7.3
+notebook==6.3.0
+numpy==1.18.5
+virtualenv==20.0.23
+jupyter-client==6.1.12
+jupyter-core==4.7.1
+pandas==1.0.4
+Pillow==7.2.0
