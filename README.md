@@ -21,7 +21,7 @@ pip install -r requirements.txt
 - Script file using webcam `gameController.py`
 
 ```
-python ameControl.py
+python gameController.py
 ```
 
 - Notebook explaing the functions `notebook/gameControllerNotebook.ipynb`
