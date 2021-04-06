@@ -32,7 +32,6 @@ cyan_upper_hsv = np.array([90, 210, 255])
 
 # --------- Methods ---------
 
-
 def getMask(img):
     # Apply masks
     red_mask = colorFilter(img, red_lower_hsv, red_upper_hsv)
@@ -67,15 +66,17 @@ def getMask(img):
 
         if((mass_red > 3000) and (mass_cyan > 3000)):
             if(angle > 12):
+                keyboard.release(keys['D'])
+                
                 print("Press: ", keys['A'])
                 keyboard.press(keys['A'])
                 keyboard.release(keys['A'])
-                keyboard.release(keys['D'])
             elif(angle < -12):
+                keyboard.release(keys['A'])
+                
                 print("Press: ", keys['D'])
                 keyboard.press(keys['D'])
                 keyboard.release(keys['D'])
-                keyboard.release(keys['A'])
             if((mass_red > 5000) and (mass_cyan > 5000)):
                 keyboard.press(keys['W'])
                 keyboard.release(keys['S'])
@@ -142,7 +143,7 @@ def getAngle(img, point1, point2):
 
 # --------- Webcam ---------
 def main():
-    cv2.namedWindow("preview")
+    cv2.namedWindow("Mask Preview")
     # sets the video input for webcam
     video = cv2.VideoCapture(1)
 
@@ -159,15 +160,15 @@ def main():
         # passes the frame to the function and receives treated image in img
         img = getMask(frame)
 
-        cv2.imshow("preview", img)
-        cv2.imshow("original", frame)
+        cv2.imshow("Mask Preview", img)
+        cv2.imshow("Original", frame)
         rval, frame = video.read()
         key = cv2.waitKey(20)
         if key == 27:  # exit on ESC
             break
 
-    cv2.destroyWindow("preview")
-    cv2.destroyWindow("original")
+    cv2.destroyWindow("Mask Preview")
+    cv2.destroyWindow("Original")
     video.release()
 
 

@@ -18,13 +18,13 @@ pip install -r requirements.txt
 
 ## Get Started
 
-- Script file using webcam `gameController.py`
+- Script file using webcam [`gameController.py`](./gameController.py)
 
 ```
 python gameController.py
 ```
 
-- Notebook explaing the functions `notebook/gameControllerNotebook.ipynb`
+- Notebook explaing the functions [`notebook/gameControllerNotebook.ipynb`](./notebook/gameControllerNotebook.ipynb)
 
 
 ## Actions
@@ -41,16 +41,16 @@ keys = {
 ```
 
 
-A => Left
+#### ⬅ A => Left  
 - Pressed when angle is positive
 
-D => Right
+#### ➡ D => Right 
 - Pressed when angle is negative
 
-W => Front
+#### ⬆ W => Front 
 - Pressed when mass is bigger than 5000
 
-S => Back
+#### ⬇ S => Back 
 - Pressed when mass is less than 3000
 
 ## Steering wheel
@@ -58,6 +58,8 @@ S => Back
 You can use this image to control your car (or horse):
 
 ![Volante](./images/steeringwheel.jpeg)
+
+#### Image avaiable on [`./images/steeringwheel.jpeg`](./images/steeringwheel.jpeg)
 
 ---
 developed by [Jean Jacques](https://github.com/jjeanjacques10/) and [Gabriel Petillo](https://github.com/gspetillo/)
