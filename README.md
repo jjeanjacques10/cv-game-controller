@@ -24,7 +24,7 @@ pip install -r requirements.txt
 python gameController.py
 ```
 
-- Notebook explaing the functions [`notebook/gameControllerNotebook.ipynb`](./notebook/gameControllerNotebook.ipynb)
+- Notebook explaining the functions [`notebook/gameControllerNotebook.ipynb`](./notebook/gameControllerNotebook.ipynb)
 
 
 ## Actions
